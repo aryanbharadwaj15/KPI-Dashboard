@@ -9,6 +9,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+
+    
 </head>
 
 <body>
@@ -17,7 +20,7 @@
     <header class="header">
         <div class="logo">
             <img src="LOGO.png" alt="DASHBOARD CONNECT">
-            
+
         </div>
         <nav>
             <button class="btn login-btn" onclick="window.location.href='login.html'">Login</button>
@@ -30,7 +33,7 @@
         <nav class="side-menu" id="side-menu">
             <ul>
                 <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
-                
+
                 <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
                 <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
                 <li><a href="feedback.html"><i class="fas fa-envelope"></i> Send Feedback</a></li>
@@ -49,6 +52,10 @@
                 <div class="chart-box">
                     <h2>User Statistics</h2>
                     <canvas id="userStatsChart"></canvas>
+                    <h3>You can view the chart in the following types:</h3>
+                    <button class="btn" id="line">Line</button>
+                    <button class="btn" id="bar">Bar</button>
+                    <button class="btn" id="pie">Pie</button>
                 </div>
 
 
@@ -70,6 +77,7 @@
                     <h2>Sales Distribution</h2>
                     <canvas id="salesDistributionChart"></canvas>
                 </div>
+                
             </div>
         </section>
     </section>
@@ -80,7 +88,9 @@
     </footer>
 
     <!-- Include the JS file -->
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
+    
+
 
 </body>
 
